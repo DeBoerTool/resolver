@@ -1,11 +1,12 @@
 {
-    "name": "dbt/php-project",
-    "description": "PHP Project Scaffolding",
+    "name": "dbt/resolver",
+    "description": "Resolve classes from strings",
     "keywords": [
         "dbt",
-        "php"
+        "php",
+        "resolver"
     ],
-    "homepage": "https://github.com/dbt/php-project",
+    "homepage": "https://github.com/dbt/resolver",
     "license": "MIT",
     "type": "project",
     "authors": [
@@ -27,17 +28,17 @@
     },
     "autoload": {
         "psr-4": {
-            "Dbt\\PhpProject\\": "src"
+            "Dbt\\Resolver\\": "Source"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Dbt\\PhpProject\\Tests\\": "tests"
+            "Dbt\\Resolver\\Tests\\": "Tests"
         }
     },
     "scripts": {
         "test": "phpunit --no-coverage",
-        "test-coverage": "phpunit --coverage-html coverage",
+        "coverage": "phpunit --coverage-html Reports/coverage",
         "pcov": "php -d pcov.enabled=1 vendor/phpunit/phpunit/phpunit --coverage-html Reports/coverage",
         "stat": "psalm"
     },
